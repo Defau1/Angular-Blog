@@ -1,0 +1,11 @@
+<div class="alert-wrap" *ngIf="text">
+  <!--alert-success - css классы в теме. если тип равен сакксесс то добавляю класс-->
+  <div class="alert" [ngClass]="{
+    'alert-success': type === 'success',
+    'alert-warning': type === 'warning',
+    'alert-danger': type === 'danger'
+  }">
+    <p>{{ text }}</p>
+  </div>
+
+</div>
